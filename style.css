@@ -8,4 +8,51 @@ a {
 }
 a:hover {
   color: black;
+}
+
+header .fixed {
+  background-color: #212529;
+}
+header .fixed .menu {
+  display: flex;
+  justify-content: space-around;
+}
+header .fixed .menu .imgbox img {
+  width: 150px;
+  height: 150px;
+}
+header .fixed nav {
+  margin-top: 60px;
+}
+header .fixed nav a {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+#studio {
+  height: 100vh;
+  background-image: url("assets/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#studio .headbck h1 {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 300;
+}
+#studio .headbck h2 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 20px 0;
+}
+#studio .headbck .btn {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #f5c904;
+  padding: 20px 40px 20px 40px;
 }/*# sourceMappingURL=style.css.map */
