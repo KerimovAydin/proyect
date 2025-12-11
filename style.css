@@ -153,16 +153,15 @@ header .fixed nav a {
   margin: 10px;
 }
 #about .box {
-  position: relative;
-  z-index: -1;
+  justify-content: center;
+  margin: 40px;
 }
 #about .box .textbox {
-  position: absolute;
-  left: 170px;
+  margin: 10px 40px;
 }
 #about .box .textbox h2, #about .box .textbox p {
-  width: 250px;
-  margin: 10px;
+  width: 300px;
+  line-height: 1.4;
 }
 #about .box .textbox h2 {
   font-weight: 700;
@@ -173,7 +172,6 @@ header .fixed nav a {
   color: #8f8f8f;
 }
 #about .box .imgbox img {
-  margin: 40px;
   border-radius: 100%;
   border: 7px solid #e0e0e0;
   width: 170px;
