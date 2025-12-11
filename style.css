@@ -64,4 +64,119 @@ header .fixed nav a {
   background-color: #f5c904;
   padding: 20px 40px 20px 40px;
   border-radius: 5px;
+}
+
+#services {
+  padding: 50px;
+}
+#services .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+#services .textbox h3 {
+  color: #7e7e7e;
+  font-size: 20px;
+  margin: 20px 0;
+}
+#services .box {
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+  right: 40px;
+  border-radius: 80px;
+  background-color: #ffd000;
+  width: 150px;
+  height: 150px;
+  left: 1px;
+}
+#services .box .icon {
+  position: absolute;
+  left: 33px;
+  top: 40px;
+  color: #ffffff;
+  width: 0;
+  height: 0;
+  font-size: 70px;
+}
+#services h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin: 10px 0;
+}
+#services p {
+  font-size: 20px;
+  color: #929292;
+  text-align: center;
+}
+
+#portfolio .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+#portfolio .textbox h3 {
+  font-size: 25px;
+  color: #797979;
+  margin: 10px 0;
+}
+#portfolio .imgbox img {
+  width: 400px;
+  height: 300px;
+  cursor: pointer;
+  transition: 2s;
+}
+#portfolio .textbox {
+  text-align: center;
+}
+#portfolio .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  margin: 10px 0;
+}
+#portfolio .textbox h4 {
+  font-size: 20px;
+  color: #888888;
+}
+
+#about .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+#about .textbox h3 {
+  font-size: 20px;
+  color: #929292;
+  margin: 10px;
+}
+#about .box {
+  position: relative;
+  z-index: -1;
+}
+#about .box .textbox {
+  position: absolute;
+  left: 170px;
+}
+#about .box .textbox h2, #about .box .textbox p {
+  width: 250px;
+  margin: 10px;
+}
+#about .box .textbox h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+#about .box .textbox p {
+  font-size: 20px;
+  color: #8f8f8f;
+}
+#about .box .imgbox img {
+  margin: 40px;
+  border-radius: 100%;
+  border: 7px solid #e0e0e0;
+  width: 170px;
+  height: 170px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
