@@ -153,15 +153,9 @@ header .fixed nav a {
   margin: 10px;
 }
 #about .box {
-  justify-content: center;
+  position: relative;
+  z-index: -1;
   margin: 40px;
-}
-#about .box .textbox {
-  margin: 10px 40px;
-}
-#about .box .textbox h2, #about .box .textbox p {
-  width: 300px;
-  line-height: 1.4;
 }
 #about .box .textbox h2 {
   font-weight: 700;
@@ -172,9 +166,40 @@ header .fixed nav a {
   color: #8f8f8f;
 }
 #about .box .imgbox img {
+  position: absolute;
   border-radius: 100%;
   border: 7px solid #e0e0e0;
   width: 170px;
   height: 170px;
-  text-align: center;
+}
+
+#amazing .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+#amazing .textbox h2 {
+  font-size: 20px;
+  color: #acacac;
+}
+#amazing .box .imgbox img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+#amazing .box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+#amazing .box h4 {
+  font-size: 20px;
+  color: #a0a0a0;
+}
+#amazing .textbox2 p {
+  margin-left: 20px;
+  padding: 20px;
+  font-size: 20px;
+  color: #6d6d6d;
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
