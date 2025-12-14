@@ -222,4 +222,32 @@ header .fixed nav a {
   font-size: 20px;
   color: #6d6d6d;
   width: 80%;
+}
+
+#contact {
+  padding: 70px;
+  height: 100vh;
+  background-color: #252525;
+  background-image: url("assets/map-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 20px;
+}
+#contact .textbox h3 {
+  font-size: 25px;
+  color: #8b8b8b;
+}
+#contact .box {
+  width: 200px;
+}
+#contact .box input {
+  margin: 5px;
+  height: 60px;
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */
