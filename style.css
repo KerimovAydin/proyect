@@ -241,7 +241,8 @@ header .fixed nav a {
 }
 #contact .textbox h3 {
   font-size: 25px;
-  color: #8b8b8b;
+  color: #47575c;
+  margin: 10px;
 }
 #contact .box {
   width: 200px;
