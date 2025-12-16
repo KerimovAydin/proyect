@@ -245,10 +245,22 @@ header .fixed nav a {
   margin: 10px;
 }
 #contact .box {
-  width: 200px;
+  width: 400px;
 }
 #contact .box input {
   margin: 5px;
-  height: 60px;
-  width: 400px;
+  height: 65px;
+  width: 450px;
+}
+#contact .box textarea {
+  border-radius: 5px;
+}
+
+.btn h2 {
+  color: #ffffff;
+  background-color: #ffd23d;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 45px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
