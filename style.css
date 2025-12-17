@@ -112,6 +112,9 @@ header .fixed nav a {
   text-align: center;
 }
 
+#portfolio {
+  padding: 50px;
+}
 #portfolio .textbox h1 {
   font-size: 40px;
   font-weight: 700;
@@ -122,10 +125,11 @@ header .fixed nav a {
   color: #797979;
   margin: 10px 0;
 }
-#portfolio .imgbox img {
-  width: 400px;
-  height: 300px;
+#portfolio .box .imgbox img {
+  width: 370px;
+  height: 280px;
   cursor: pointer;
+  margin-right: 20px;
   transition: 2s;
 }
 #portfolio .textbox {
