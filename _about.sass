@@ -9,6 +9,11 @@
             color: #929292ff
             margin: 10px
     .box
+        position: relative
+        z-index: -1
+        display: flex
+        justify-content: center
+
         .textbox
             margin: 40px
             h2
@@ -22,6 +27,30 @@
                 color: #9e9e9eff
                 width: 300px
         .imgbox
+            position: absolute
+            left: 40%
+            z-index: 2
             img
                 border-radius: 50%
                 border: 7px solid #e2e0e0ff
+
+        .text-end
+            transform: translate(-300px,-40px)
+        .text-start
+            transform: translate(300px,-40px)
+
+        .textbox1
+            background-color: #ecc61c
+            border-radius: 50%
+            width: 200px
+            height: 200px
+            border: 7px solid #e9e7e7
+            display: flex
+            align-items: center
+            justify-content: center
+            h4
+                color: #ffffff
+                font-weight: 700
+                font-size: 20px
+                width: 70px
+                line-height: 1.3

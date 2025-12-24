@@ -125,10 +125,12 @@ header .fixed nav a {
   color: #797979;
   margin: 10px 0;
 }
+#portfolio .box {
+  margin: 10px 0;
+}
 #portfolio .box .imgbox {
   position: relative;
   z-index: -1;
-  cursor: pointer;
 }
 #portfolio .box .imgbox .icon {
   position: absolute;
@@ -268,6 +270,12 @@ header .fixed nav a {
   color: #929292;
   margin: 10px;
 }
+#about .box {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
 #about .box .textbox {
   margin: 40px;
 }
@@ -283,7 +291,35 @@ header .fixed nav a {
   color: #9e9e9e;
   width: 300px;
 }
+#about .box .imgbox {
+  position: absolute;
+  left: 40%;
+  z-index: 2;
+}
 #about .box .imgbox img {
   border-radius: 50%;
   border: 7px solid #e2e0e0;
+}
+#about .box .text-end {
+  transform: translate(-300px, -40px);
+}
+#about .box .text-start {
+  transform: translate(300px, -40px);
+}
+#about .box .textbox1 {
+  background-color: #ecc61c;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 7px solid #e9e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .box .textbox1 h4 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  width: 70px;
+  line-height: 1.3;
 }/*# sourceMappingURL=style.css.map */
