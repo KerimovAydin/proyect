@@ -18,19 +18,49 @@
             color: #47575cff
             margin: 10px
     .box
-        width: 400px
-        input
-            margin: 5px
-            height: 65px
-            width: 450px
-        textarea
-            border-radius: 5px
+        display: flex
+        .minibox
+            width: 50%
+            justify-content: space-around
+            input
+                margin: 11px 0
+                height: 60px
+                width: 410px
+            textarea
+                border-radius: 5px
+                width: 400px
+                height: 235px
+            @media (max-width: 900px)
+                input
+                    margin: 11px 0
+                    height: 40px
+                    width: 310px
+                textarea
+                    border-radius: 5px
+                    width: 300px
+                    height: 180px
+    @media (max-width: 300px)
+        .box
+            display: flex
+            flex-wrap: wrap
+            .minibox
+                width: 50%
+                justify-content: space-around
+            input
+                margin: 11px 0
+                height: 60px
+                width: 410px
+            textarea
+                border-radius: 5px
+                width: 400px
+                height: 235px
 
-.btn
-    h2
-        color: #ffffff
-        background-color: #ffd23dff
-        font-size: 20px
-        font-weight: 700
-        padding: 20px 45px
-        border-radius: 5px
+    .btn
+        h2
+            color: #ffffff
+            background-color: #ffd23dff
+            font-size: 20px
+            font-weight: 700
+            padding: 20px 45px
+            border-radius: 5px
+            opacity: 0.7
