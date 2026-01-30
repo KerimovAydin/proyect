@@ -47,6 +47,11 @@ header .fixed .menu:hover a {
   transition: 1s;
   color: #ffcc23;
 }
+header .fixed .menu .btn h3 {
+  color: #ffffff;
+  font-size: 700;
+  font-weight: 25px;
+}
 @media (min-width: 700px) {
   header .fixed .btn {
     display: flex;
