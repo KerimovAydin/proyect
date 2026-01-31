@@ -21,23 +21,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="fixed ">
-                        <div class="menu d-flex align-items-center">
-                            <div class="imgbox">
-                                <img src="assets/team/navbar-logo.svg" alt="">
-                            </div>
-                            <nav>
-                                <a href="#Services">Services</a>
-                                <a href="#Portfolio">Portfolio</a>
-                                <a href="#About">About</a>
-                                <a href="#Team">Team</a>
-                                <a href="#Contact">Contact</a>
-                            </nav>
-                            <div class="btn ">
-                                <h3>MENU</h3>
-                                <div class="icon">
-                                    <i class="fa-solid fa-bars"></i>
-                                </div>
+                    <div class="menu ">
+                        <div class="imgbox">
+                            <img src="assets/team/navbar-logo.svg" alt="">
+                        </div>
+                        <nav>
+                            <a href="#services">Services</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#about">About</a>
+                            <a href="#team">Team</a>
+                            <a href="#contact">Contact</a>
+                        </nav>
+                        <div class="btn ">
+                            <h3>MENU</h3>
+                            <div class="icon">
+                                <i class="fa-solid fa-bars"></i>
                             </div>
                         </div>
                     </div>
@@ -50,12 +48,14 @@
         <section id="studio">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="headbck text-center">
-                            <h1>Welcome To Our Studio</h1>
-                            <h2>IT'S NICE TO MEET YOU</h2>
-                            <div class="btn">
-                                <h3>TELL ME MORE</h3>
+                    <div class="col-md-12 d-flex justify-content-center align-items-center">
+                        <div class="box">
+                            <div class="textbox text-center">
+                                <h2>Welcome To Our Studio!</h2>
+                                <h1>IT'S NICE TO MEET YOU</h1>
+                                <div class="btn">
+                                    <h4>TELL ME MORE</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -298,7 +298,7 @@
                 </div>
             </div>
         </section>
-        <section id="amazing">
+        <section id="team">
             <div class="container">
                 <div class="row">
                     <div class="textbox text-center">
@@ -397,29 +397,67 @@
                 </div>
             </div>
         </section>
+        <section id="sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="box">
+                            <div class="imgbox microsoft">
+                                <img src="assets/microsoft.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="box">
+                            <div class="imgbox">
+                                <img src="assets/google.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="box">
+                            <div class="imgbox">
+                                <img src="assets/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="box">
+                            <div class="imgbox ibm">
+                                <img src="assets/ibm.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="textbox text-center">
-                            <h1>Contact Us</h1>
+                        <div class="box text-center">
+                            <h1>CONTACT US</h1>
                             <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="box">
-                            <div class="minibox">
-                                <input type="text" placeholder="Your Name*">
-                                <input type="text" placeholder="Your Email*">
-                                <input type="text" placeholder="Your Phone*">
-                            </div>
-                            <div class="minibox">
-                                <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                            </div>
+                    <div class="col-md-6">
+                        <div class="place">
+                            <input type="text" placeholder="Your Name *">
+                            <input type="text" placeholder="Your Mail *">
+                            <input type="text" placeholder="Your Phone *">
                         </div>
-                        <div class="btn d-flex justify-content-center">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="textbox">
+                            <textarea name="" id="" cols="70" placeholder="Your Message" rows="11"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div class="btn">
                             <h2>SEND MESSAGE</h2>
                         </div>
                     </div>
@@ -428,8 +466,34 @@
         </section>
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="menu d-flex justify-content-between align-items-center">
+                        <a href="#">Copyright © Your Website 2024</a>
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#">Privacy Policy <span>Terms of Use</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

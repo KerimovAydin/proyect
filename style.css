@@ -11,105 +11,107 @@ a:hover {
 }
 
 header {
-  width: 100%;
-}
-header .fixed {
+  padding: 20px 0;
+  background-color: #212529;
   position: fixed;
-  z-index: 1;
-  top: 0;
   right: 0;
   left: 0;
-  background-color: #212529;
+  z-index: 1;
+  width: 100%;
 }
-header .fixed .menu {
+header .menu {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px 0 40px;
+  align-items: center;
 }
-header .fixed .menu .imgbox img {
+header .menu .imgbox {
+  width: 170px;
+}
+header .menu nav {
+  display: block;
+}
+header .menu nav a {
   cursor: pointer;
-  width: 200px;
-  height: 150px;
+  font-size: 18px;
+  color: #fcf7f7;
+  margin-right: 30px;
 }
-header .fixed .menu .btn {
+header .menu nav a:hover {
+  color: #f8cf75;
+}
+header .menu .btn {
   display: none;
 }
-header .fixed .menu nav {
-  margin-bottom: 60px;
-}
-header .fixed .menu nav a {
-  cursor: pointer;
-  font-size: 20px;
-  color: #ffffff;
-  margin-right: 10px;
-}
-header .fixed .menu:hover a {
-  transition: 1s;
-  color: #ffcc23;
-}
-header .fixed .menu .btn h3 {
-  color: #ffffff;
-  font-size: 700;
-  font-weight: 25px;
-}
-@media (min-width: 700px) {
-  header .fixed .btn {
+@media screen and (max-width: 992px) {
+  header .menu {
+    width: 100%;
+  }
+  header .menu nav {
+    display: none;
+  }
+  header .menu .btn {
     display: flex;
-    color: #727272;
-    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid #605e5e;
+    padding: 7px 13px 7px 11px;
+  }
+  header .menu .btn h3 {
+    color: #a5a2a2;
     font-weight: 700;
-    border: 1px solid #444444;
-    height: 40px;
-    paddign: 10px;
-  }
-  header .fixed .btn .icon {
-    color: rgba(175, 175, 175, 0.4745098039);
-  }
-  header .fixed nav {
-    margin-top: 60px;
-  }
-  header .fixed nav a {
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 18px;
     margin-right: 10px;
   }
-  header .fixed nav a:hover a {
-    transition: 1s;
-    color: #ffcc23;
+  header .menu .btn .icon {
+    color: #afacac;
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 280px) {
+  header .menu {
+    display: flex;
+    flex-flow: row wrap;
   }
 }
 
 #studio {
-  height: 100hv;
   background-image: url("assets/header-bg.jpg");
   background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
-#studio .headbck {
-  padding: 200px;
+#studio .box {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#studio .headbck h1 {
-  margin-top: 40px;
-  font-size: 30px;
-  color: #ffffff;
-  font-weight: 300;
+#studio .box .textbox h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
 }
-#studio .headbck h2 {
-  font-size: 80px;
+#studio .box .textbox h1 {
+  font-size: 90px;
+  color: white;
+  margin: 0 0 50px 0;
   font-weight: 700;
-  color: #ffffff;
-  margin: 20px 0;
 }
-#studio .headbck .btn h3 {
-  color: #ffffff;
-  font-size: 20px;
+#studio .box .textbox .btn {
+  background-color: #ffc800;
+  color: white;
+  padding: 18px 40px;
+  font-size: 22px;
   font-weight: 700;
-  background-color: #f5c904;
-  padding: 20px 40px 20px 40px;
-  border-radius: 5px;
+}
+#studio .box .textbox h4 {
   cursor: pointer;
-  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  #studio .box .textbox h2 {
+    font-size: 35px;
+  }
+  #studio .box .textbox h1 {
+    font-size: 70px;
+  }
 }
 
 #services {
@@ -218,53 +220,53 @@ header .fixed .menu .btn h3 {
   color: #888888;
 }
 
-#amazing {
+#team {
   padding: 40px;
 }
-#amazing .textbox h1 {
+#team .textbox h1 {
   font-size: 40px;
   font-weight: 700;
   color: #000000;
 }
-#amazing .textbox h3 {
+#team .textbox h3 {
   font-size: 20px;
   color: #acacac;
   margin: 10px 0;
 }
-#amazing .box .imgbox img {
+#team .box .imgbox img {
   border-radius: 100%;
   width: 200px;
   height: 200px;
   border: 7px solid #dbdbdb;
 }
-#amazing .box ul {
+#team .box ul {
   display: flex;
   margin-left: 25px;
 }
-#amazing .box ul .icon {
+#team .box ul .icon {
   background-color: black;
   color: #ffffff;
   border-radius: 100%;
   margin: 5px;
   padding: 10px;
 }
-#amazing .box ul .icon:hover {
+#team .box ul .icon:hover {
   cursor: pointer;
   opacity: 0.7;
 }
-#amazing .box h2 {
+#team .box h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   color: #000000;
 }
-#amazing .box h4 {
+#team .box h4 {
   text-align: center;
   font-size: 20px;
   color: #a0a0a0;
   margin: 10px 0;
 }
-#amazing .textbox2 p {
+#team .textbox2 p {
   margin-left: 20px;
   padding: 20px;
   font-size: 20px;
@@ -273,82 +275,69 @@ header .fixed .menu .btn h3 {
 }
 
 #contact {
-  padding: 70px;
-  height: 100vh;
   background-color: #252525;
   background-image: url("assets/map-image.png");
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#contact .textbox h1 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 20px;
-}
-#contact .textbox h3 {
-  font-size: 25px;
-  color: #47575c;
-  margin: 10px;
 }
 #contact .box {
+  margin-top: 60px;
+}
+#contact .box h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+#contact .box h3 {
+  font-size: 20px;
+  color: #6c757d;
+}
+#contact .place {
   display: flex;
+  flex-direction: column;
+  margin-top: 44px;
 }
-#contact .box .minibox {
-  width: 50%;
-  justify-content: space-around;
-}
-#contact .box .minibox input {
-  margin: 11px 0;
-  height: 60px;
-  width: 410px;
-}
-#contact .box .minibox textarea {
-  border-radius: 5px;
-  width: 400px;
-  height: 235px;
-}
-@media (max-width: 900px) {
-  #contact .box .minibox input {
-    margin: 11px 0;
-    height: 40px;
-    width: 310px;
-  }
-  #contact .box .minibox textarea {
-    border-radius: 5px;
-    width: 300px;
-    height: 180px;
-  }
-}
-@media (max-width: 300px) {
-  #contact .box {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #contact .box .minibox {
-    width: 50%;
-    justify-content: space-around;
-  }
-  #contact .box input {
-    margin: 11px 0;
-    height: 60px;
-    width: 410px;
-  }
-  #contact .box textarea {
-    border-radius: 5px;
-    width: 400px;
-    height: 235px;
-  }
-}
-#contact .btn h2 {
-  color: #ffffff;
-  background-color: #ffd23d;
+#contact .place input {
+  margin: 14px 0;
+  padding: 20px 20px;
   font-size: 20px;
   font-weight: 700;
-  padding: 20px 45px;
+}
+#contact .textbox {
+  display: flex;
+  margin-top: 55px;
+  font-size: 20px;
+}
+#contact .textbox textarea {
+  color: rgba(206, 202, 202, 0.937254902);
   border-radius: 5px;
+  font-weight: 700;
+  padding: 18px;
+}
+#contact .btn {
+  padding: 15px 35px;
+  margin: 40px 0;
+  background-color: #ffc021;
+  border-radius: 7px;
   opacity: 0.7;
+}
+#contact .btn h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  #contact .textbox {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact .box h1 {
+    font-size: 45px;
+  }
+  #contact .box h3 {
+    font-size: 18px;
+  }
 }
 
 #about {
@@ -436,5 +425,67 @@ header .fixed .menu .btn h3 {
     width: 120px;
     height: 120px;
     transform: translate(-100px, 30px);
+  }
+}
+
+footer {
+  padding: 22px 0;
+}
+footer .menu a {
+  color: #535151;
+  font-size: 18px;
+}
+footer .menu span {
+  margin: 0 20px;
+}
+footer .menu ul {
+  display: flex;
+  justify-content: center;
+}
+footer .menu ul li .icon {
+  font-size: 17px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #1a1919;
+  color: white;
+  margin: 0 12px;
+  border-radius: 30px;
+}
+footer .menu ul li .icon:hover {
+  background-color: #424649;
+  transition: 0.5s;
+}
+@media screen and (max-width: 992px) {
+  footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .menu ul {
+    margin: 15px 0;
+  }
+}
+
+#sponsors {
+  padding: 60px 0;
+}
+#sponsors .box {
+  padding: 0 50px;
+}
+#sponsors .box .imgbox {
+  width: 120px;
+}
+#sponsors .box .microsoft {
+  width: 200px;
+}
+#sponsors .box .ibm {
+  width: 100px;
+}
+@media screen and (max-width: 576px) {
+  #sponsors .box .imgbox {
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
